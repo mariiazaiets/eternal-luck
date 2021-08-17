@@ -1,0 +1,16 @@
+.logo {
+  color: gold;
+}
+
+.header {
+  height: 100px;
+  border-bottom: 3px double gold;
+  margin: 10px;
+}
+
+.logotype {
+  width: 50px;
+  margin-top: -15px;
+}
+
+

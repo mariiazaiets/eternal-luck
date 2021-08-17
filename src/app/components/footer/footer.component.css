@@ -1,0 +1,10 @@
+.footer {
+  height: 60px;
+  border-top: 3px double red;
+  margin: 10px;
+}
+
+.logotype {
+  width: 50px;
+  margin-top: -15px;
+}

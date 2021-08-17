@@ -1,0 +1,10 @@
+.carousel-of-games {
+  width: 60%;
+  height: 530px;
+  margin: 0 auto;
+}
+
+.carousel-caption {
+  background-color: white;
+  color: black;
+}
