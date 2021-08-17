@@ -1,0 +1,18 @@
+language: node_js
+node_js:
+  - '14'
+
+before_install:
+  - npm install -g @angular/cli
+
+install: npm install
+
+branches:
+  only:
+    - master
+
+deploy:
+  provider: heroku
+  app: eternal-luck
+  api_key:
+    secure: '01e7c11b-59aa-40c8-9862-ca9921939f4a'
