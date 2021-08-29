@@ -1,0 +1,11 @@
+<app-header></app-header>
+
+<h2 class=" text-center text-white"><b>All users</b></h2>
+
+<ul class="list-group">
+  <li class="list-group-item d-flex justify-content-between align-items-center text-black" *ngFor="let user of users">
+    {{user.username}}
+    <button type="button" id="addToFriends" class="btn btn-primary btn-outline-success text-white"
+            (click)="addUserToFriends(user.email)">Add to friends</button>
+  </li>
+</ul>

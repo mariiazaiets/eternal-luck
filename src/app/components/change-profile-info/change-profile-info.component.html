@@ -1,0 +1,24 @@
+<app-header></app-header>
+
+<div class="form-profile text-center">
+  <form>
+    <img class="mb-4 login-page_logo" src="../../../assets/logo.jpeg" alt="logo">
+    <h1 class="h3 mb-3 fw-normal text-white text-center">Profile</h1>
+
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingUsername" placeholder="Username" #username required>
+      <label for="floatingUsername">Username</label>
+    </div>
+    <br>
+    <div class="form-floating">
+      <input type="text" class="form-control" id="floatingUserAge" placeholder="Age" #age required>
+      <label for="floatingUserAge">Age</label>
+    </div>
+
+    <button class="w-100 btn btn-lg btn-primary mt-3" type="button"
+            (click)="saveUserInfo(username.value, age.value)">Save</button>
+    <p class="mt-5 mb-3 text-muted">© 2021 by Mariia Zaiets</p>
+  </form>
+</div>
+
+<app-footer></app-footer>

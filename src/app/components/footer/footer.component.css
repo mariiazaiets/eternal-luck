@@ -1,10 +1,14 @@
 .footer {
   height: 60px;
+  width: 100%;
   border-top: 3px double red;
   margin: 10px;
+  /*position: absolute;*/
+  /*bottom: 0;*/
 }
 
 .logotype {
   width: 50px;
   margin-top: -15px;
 }
+

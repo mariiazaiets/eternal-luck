@@ -1,21 +1,22 @@
 <header class="bg-black text-white header">
   <div class="container d-flex flex-wrap align-items-center justify-content-center
   justify-content-md-between py-3 mb-4">
-    <a href="/" class="d-flex align-items-center m-2 col-md-3 mb-md-0 text-decoration-none logo">
+    <a href="/games" class="d-flex align-items-center m-2 col-md-3 mb-md-0 text-decoration-none logo">
       <img src="../../../assets/logo.jpeg"
            alt="logo" class="logotype">
       <h2 class="mt-1">Eternal luck</h2>
     </a>
 
     <ul class="nav col-12 col-md-auto justify-content-center mb-md-0">
-      <li><a href="#" class="nav-link px-2 link-secondary">Games</a></li>
-      <li><a href="#" class="nav-link px-2 link-light">Library</a></li>
-      <li><a href="#" class="nav-link px-2 link-light">Friends</a></li>
-      <li><a href="#" class="nav-link px-2 link-light">Profile</a></li>
+      <li><a href="games" class="nav-link px-2 link-secondary">Games</a></li>
+      <li><a href="games/library" class="nav-link px-2 link-light">Library</a></li>
+      <li><a href="profile" class="nav-link px-2 link-light">Profile</a></li>
+      <li><a href="users/friends" class="nav-link px-2 link-light">Friends</a></li>
+      <li><a href="users" class="nav-link px-2 link-light">All users</a></li>
     </ul>
 
     <div class="col-md-3 text-end">
-      <button type="button" class="btn btn-warning text-black me-2">Login</button>
+      <button type="button" class="btn btn-warning text-black me-2" (click)="logout()">Logout</button>
     </div>
   </div>
 </header>

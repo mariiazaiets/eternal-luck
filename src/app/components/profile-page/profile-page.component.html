@@ -1,24 +1,15 @@
-<main class="form-profile text-center">
-  <form>
-    <img class="mb-4 login-page_logo" src="../../../assets/logo.jpeg" alt="logo">
-    <h1 class="h3 mb-3 fw-normal text-white text-center">Profile</h1>
+<app-header></app-header>
 
-    <div class="form-floating">
-      <input type="text" class="form-control" id="floatingUsername" placeholder="Username">
-      <label for="floatingUsername">Username</label>
-    </div>
+<div class="profile-info">
+  <h2 class="text-white text-center">Profile info</h2>
+  <div class="d-grid gap-2 col-6 mx-auto" *ngFor="let person of user">
+    <button class="btn btn-warning" type="button"><span class="text-decoration-underline">Username:</span> {{person.username}}</button>
+    <button class="btn btn-warning" type="button"><span class="text-decoration-underline">Email address:</span> {{person.email}}</button>
+    <button class="btn btn-warning" type="button"><span class="text-decoration-underline">Age:</span> {{person.age}}</button>
     <br>
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
-    <br>
-    <div class="form-floating">
-      <input type="text" class="form-control" id="floatingUserAge" placeholder="Age">
-      <label for="floatingUserAge">Age</label>
-    </div>
+    <a href="profile/change-profile-info" class="btn btn-primary btn-outline-success text-white">Change profile info</a>
+  </div>
+</div>
 
-    <button class="w-100 btn btn-lg btn-primary mt-3" type="submit">Save</button>
-    <p class="mt-5 mb-3 text-muted">© 2021</p>
-  </form>
-</main>
+
+<app-footer></app-footer>

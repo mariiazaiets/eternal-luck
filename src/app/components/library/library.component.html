@@ -1,0 +1,30 @@
+<app-header></app-header>
+
+<div class="album py-5 bg-black">
+  <div class="container">
+
+    <h2 class="text-center text-white">My games</h2>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-3 my-games_block">
+      <div class="col" *ngFor="let game of games; index as i">
+        <div class="card shadow-sm">
+          <img [src]="game.imgUrl" alt="Picture of game" class="bd-placeholder-img card-img-top my-games_img">
+          <div class="card-body">
+            <h3 class="card-title">{{game.title}}</h3>
+            <p class="card-text">{{game.description}}</p>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="btn-group">
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-primary text-white"
+                (click)="downloadGame()">Download</button>
+                <button type="button" class="btn btn-sm btn-outline-secondary btn-warning text-black"
+                (click)="shareRef()">Share</button>
+              </div>
+              <p class="font-weight-bold text-muted">{{game.price}} UAH</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<app-footer></app-footer>

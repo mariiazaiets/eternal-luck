@@ -1,0 +1,9 @@
+<app-header></app-header>
+
+<h2 class=" text-center text-white"><b>Friends</b></h2>
+
+<ul class="list-group">
+  <li class="list-group-item text-black" *ngFor="let user of users">
+    {{user.username}}
+  </li>
+</ul>
