@@ -3,5 +3,5 @@ export interface IAppConfig {
 }
 
 export const AppConfig: IAppConfig = {
-  serverUrl: 'https://eternal-luck-service.herokuapp.com'
+  serverUrl: 'http://localhost:8080'
 };
